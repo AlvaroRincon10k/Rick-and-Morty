@@ -8,6 +8,11 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.1"
 composeBom = "2024.09.00"
+daggerHilt = "2.44"
+retrofit = "2.9.0"
+coil = "2.2.2"
+icons = "1.5.0"
+hiltNaviagtion = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -24,9 +29,17 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt" }
+kapt  = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "daggerHilt" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+hiltNaviagtion = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNaviagtion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+dagger-hilt = { id = "dagger.hilt.android.plugin" }
+kotlin-kapt = { id = "kotlin-kapt" }
 
