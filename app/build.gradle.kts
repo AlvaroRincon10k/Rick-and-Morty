@@ -52,7 +52,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.hilt.android)
-    kapt(libs.kapt)
+    kapt(libs.hilt.compiler)
     implementation(libs.retrofit)
     implementation(libs.gson)
     implementation(libs.coil)
