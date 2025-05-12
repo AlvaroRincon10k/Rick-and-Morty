@@ -57,6 +57,8 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.coil)
     implementation(libs.hiltNaviagtion)
+    implementation(libs.material)
+    implementation(libs.iconos)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

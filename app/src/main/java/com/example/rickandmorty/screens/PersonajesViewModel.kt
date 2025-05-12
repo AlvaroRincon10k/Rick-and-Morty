@@ -20,7 +20,7 @@ class PersonajesViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            _state.value = repo.getPersonasjes().personajes
+            _state.value = repo.getPersonasjes().results
         }
     }
 }
